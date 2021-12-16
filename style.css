@@ -20,3 +20,7 @@ body {
   padding-left: 3rem;
   list-style-type: none;
 }
+
+#results {
+  padding-left: 48px;
+}

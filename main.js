@@ -24,6 +24,8 @@ async function loadCharacters() {
 
 function displayCharacters(characters, searchTerm) {
   const list = document.getElementById('characters-list');
+  const results = document.getElementById('results');
+
   const htmlString = characters
     .map(({ name, house }) => {
       if (searchTerm) {
@@ -37,6 +39,7 @@ function displayCharacters(characters, searchTerm) {
     })
     .join('');
   list.innerHTML = htmlString;
+  results.innerHTML = `${characters.length} match`;
 }
 
 loadCharacters();
