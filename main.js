@@ -27,10 +27,10 @@ function displayCharacters(characters, searchTerm) {
   const htmlString = characters
     .map(({ name, house }) => {
       if (searchTerm) {
-        let string = `<li>${name} - ${house}</li>`;
+        let string = `${name} - ${house}`;
         let pattern = new RegExp(searchTerm, 'gi');
         string = string.replace(pattern, (match) => `<mark>${match}</mark>`);
-        return string;
+        return `<li>${string}</li>`;
       } else {
         return `<li>${name} - ${house}</li>`;
       }
