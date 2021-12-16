@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  color: #2e2e2e;
+}
+.search {
+  padding: 10px;
+  padding-left: 1rem;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#characters-list {
+  padding-left: 3rem;
+  list-style-type: none;
+}
